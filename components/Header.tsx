@@ -18,7 +18,7 @@ function Header() {
 
 
   return (
-    <header className='flex items-center justify-between p-4 py-2 border-b border-gray-200'>
+    <header className='flex items-center justify-between p-4 py-2 border-b border-gray-200' >
         {/* left side */}
         <div className='flex items-center h-10'>
             {open && !isMobile ? (
