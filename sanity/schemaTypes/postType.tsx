@@ -45,14 +45,14 @@ export const postType = defineType({
             description: "the main content of the post",
             of: [{type: "block"}],
         }),
-        defineField({
-            name:"orignalBody",
-            title:"Orignal Body",
-            type:"array",
-            description: "Stores the original body content if the post is deleted",
-            of: [{type : "block"}],
+        // defineField({
+        //     name:"orignalBody",
+        //     title:"Orignal Body",
+        //     type:"array",
+        //     description: "Stores the original body content if the post is deleted",
+        //     of: [{type : "block"}],
             
-        }),
+        // }),
         defineField({
             name:"image",
             title:"Image",

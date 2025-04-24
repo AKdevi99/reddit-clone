@@ -23,13 +23,13 @@ export const commentType = defineType({
             to: [{type: "user"}],
             validation: (rule) => rule.required(),
         }),
-        defineField({
-            name:"description",
-            title:"Description",
-            type:"text",
-            description: "A brief description of what this subreddit is about",
+        // defineField({
+        //     name:"description",
+        //     title:"Description",
+        //     type:"text",
+        //     description: "A brief description of what this subreddit is about",
             
-        }),
+        // }),
         defineField({
             name:"post",
             title:"Post",
@@ -39,8 +39,8 @@ export const commentType = defineType({
             validation: (rule) => rule.required(),
         }),
         defineField({
-            name:"comment",
-            title:"Comment",
+            name:"Parentcomment",
+            title:"Parent Comment",
             type:"reference",
             description: "If this is a reply, reference to the parent comment",
             to: [{type: "comment"}],
