@@ -24,6 +24,7 @@ import {
   SidebarRail,
 } from "@/components/ui/sidebar"
 import { getSubreddits } from "@/sanity/lib/subreddit/getSubreddits"
+import CreateCommunityButton from "./header/CreateCommunityButton"
 
 
 type SidebarData = {
@@ -81,8 +82,7 @@ export async function AppSidebar({ ...props }: React.ComponentProps<typeof Sideb
           <SidebarMenu>
             <SidebarMenuItem>
               <SidebarMenuButton asChild>
-                {/* TODO: add create community button */}
-                {/* create Community button */}
+                <CreateCommunityButton />
               </SidebarMenuButton>
 
               <SidebarMenuButton asChild className="p-5">
