@@ -3,9 +3,11 @@ import { GetAllPostsQueryResult } from '@/sanity.types';
 import { getPostVotes } from '@/sanity/lib/vote/getPostVotes';
 import { getUserPostVoteStatus } from '@/sanity/lib/vote/getUserPostVoteStatus';
 import { getPostComments } from '@/sanity/lib/vote/getPostComments';
-import TimeAgo from "@/components/TimeAgo";
+import TimeAgo from "@/components/Timeago";
 import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
+import { MessageSquare } from 'lucide-react';
+import CommentInput from '../comment/CommentInput';
 
 
 interface PostProps {
@@ -86,6 +88,15 @@ async function Post({
                         />
                     </div>
                 )}
+
+                <button className='flex items-center px-1 py-2 gap-1 text-sm text-gray-500'>
+                    <MessageSquare className='w-4 h-4'/>
+                    <span>{comments.length} Comments</span>
+                </button>
+
+                {/* Coments Input */}
+                <CommentInput postId={post._id}/>
+                {/* Comment List */}
             </div>
         </div>
 
