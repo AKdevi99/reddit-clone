@@ -2,9 +2,10 @@
 import { useUser } from '@clerk/nextjs';
 import { useRouter } from 'next/navigation';
 import React, { useState, useTransition } from 'react'
-import { form } from 'sanity/structure';
 import { Input } from '../ui/input';
 import { Button } from '../ui/button';
+import createComment from '@/action/createComment';
+
 
 function CommentInput(
     {
@@ -12,7 +13,7 @@ function CommentInput(
         parentCommentId,
     }: {
         postId:string;
-        parentcommentId?:string;
+        parentCommentId?:string ;
     }){
         const [content, setContent] = useState("");
         const [isPending, startTransition] = useTransition();
@@ -22,6 +23,26 @@ function CommentInput(
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) =>  {
         e.preventDefault();
+        startTransition( async()=> {
+            try {
+                const result = await createComment(
+                    postId,
+                    content,
+                    parentCommentId,
+                );
+
+                if(result.error){
+                    console.error("Error adding comment:",result.error);
+                }else {
+                    setContent("");
+                }
+            
+            } catch (error) {
+                console.error("Failed to add comment:",error);
+                
+            }
+        })
+       
         
     }
   return (
