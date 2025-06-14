@@ -5,6 +5,7 @@ import React from 'react'
 import Image from 'next/image';
 import Timeago from '../Timeago';
 import CommentList from './CommentList';
+import CommentReply from './CommentReply';
 
 async function Comment({
     postId,
@@ -49,7 +50,7 @@ async function Comment({
             </div>
             <p className='text-gray-700 leading-relaxed'>{comment.content}</p>
 
-            {/* <CommentReply postId={postId} comment={comment} /> */}
+            <CommentReply postId={postId} comment={comment} />
 
             {/* Comment replies - supports infinite nesting */}
             {replies?.length > 0 && (
