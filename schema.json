@@ -578,7 +578,7 @@
         },
         "optional": true
       },
-      "Parentcomment": {
+      "parentComment": {
         "type": "objectAttribute",
         "value": {
           "type": "object",

@@ -12,8 +12,8 @@ interface AddCommentParams {
 export async function addComment({
     content,
     postId,
+    parentCommentId,
     userId,
-    parentCommentId
 }: AddCommentParams) {
 
     try {

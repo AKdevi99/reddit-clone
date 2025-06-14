@@ -39,7 +39,7 @@ export const commentType = defineType({
             validation: (rule) => rule.required(),
         }),
         defineField({
-            name:"Parentcomment",
+            name:"parentComment",
             title:"Parent Comment",
             type:"reference",
             description: "If this is a reply, reference to the parent comment",

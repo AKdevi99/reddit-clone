@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { urlFor } from '@/sanity/lib/image';
 import { MessageSquare } from 'lucide-react';
 import CommentInput from '../comment/CommentInput';
+import CommentList from "@/components/comment/CommentList"
 
 
 interface PostProps {
@@ -97,6 +98,7 @@ async function Post({
                 {/* Coments Input */}
                 <CommentInput postId={post._id}/>
                 {/* Comment List */}
+                <CommentList postId={post._id} comments={comments} userId={userId} />
             </div>
         </div>
 

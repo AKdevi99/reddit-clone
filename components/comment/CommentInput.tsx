@@ -17,7 +17,6 @@ function CommentInput(
     }){
         const [content, setContent] = useState("");
         const [isPending, startTransition] = useTransition();
-        const router = useRouter();
         const {user} = useUser();
 
 
