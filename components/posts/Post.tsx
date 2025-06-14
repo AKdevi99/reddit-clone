@@ -9,6 +9,7 @@ import { urlFor } from '@/sanity/lib/image';
 import { MessageSquare } from 'lucide-react';
 import CommentInput from '../comment/CommentInput';
 import CommentList from "@/components/comment/CommentList"
+import PostVoteButtons from './PostVoteButtons';
 
 
 interface PostProps {
@@ -30,11 +31,11 @@ async function Post({
         <div className='flex'>
             {/* vote Buttons */}
 
-            {/* <PostVoteButtons
+            <PostVoteButtons
             contentId = {post._id}
             votes={votes}
             vote={vote}
-            contenttype="post"/> */}
+            contentType="post"/>
 
 
             <div className='flex-1 p-3'>
