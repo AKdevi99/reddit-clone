@@ -1,5 +1,5 @@
 import React from 'react'
-import { GetAllPostsQueryResult } from '@/sanity.types';
+import { GetAllPostsQueryResult, GetPostsForSubredditQueryResult } from '@/sanity.types';
 import { getPostVotes } from '@/sanity/lib/vote/getPostVotes';
 import { getUserPostVoteStatus } from '@/sanity/lib/vote/getUserPostVoteStatus';
 import { getPostComments } from '@/sanity/lib/vote/getPostComments';
@@ -13,7 +13,7 @@ import PostVoteButtons from './PostVoteButtons';
 
 
 interface PostProps {
-    post: GetAllPostsQueryResult[number];
+    post: GetAllPostsQueryResult[number] | GetPostsForSubredditQueryResult[number];
     userId: string | null;
 }
 
