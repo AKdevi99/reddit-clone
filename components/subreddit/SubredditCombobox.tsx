@@ -17,7 +17,6 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 import { useRouter } from "next/navigation"
-import { useUser } from "@clerk/nextjs"
 import { useState } from "react"
 import { GetSubredditsQueryResult } from "@/sanity.types"
 

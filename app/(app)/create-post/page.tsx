@@ -1,4 +1,5 @@
 import CreateCommunityButton from '@/components/header/CreateCommunityButton';
+import CreatePostForm from '@/components/posts/CreatePostForm';
 import SubredditCombobox from '@/components/subreddit/SubredditCombobox';
 import { getSubreddits } from '@/sanity/lib/subreddit/getSubreddits';
 import React from 'react'
@@ -34,7 +35,7 @@ async function CreatePostPage({
                 {/* Content */}
                 {/* TODO add post creation form */}
                 <section className='my-8'>
-                    {/* <CreatePostForm /> */}
+                    <CreatePostForm />
 
                 </section>
             </>
