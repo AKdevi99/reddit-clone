@@ -6,7 +6,7 @@ import React from 'react'
 
 async function getPosts() {
     const getAllPostsQuery = 
-    defineQuery(`*[_type == "post" && isDeleted == false] {
+    defineQuery(`*[_type == "post" && isDeleted != true] {
         _id,
         title,
         "slug":slug.current,

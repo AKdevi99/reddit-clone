@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import CommentInput from './CommentInput';
 import { MessageCircle } from 'lucide-react';
 import ReportButton from '../ReportButton';
+import DeleteButton from '../DeleteButton';
 
 
 
@@ -35,14 +36,14 @@ function CommentReply({
 
             <ReportButton contentId={comment._id}/>
 
-            {/* 
+            
             {comment.author?._id && (
                 <DeleteButton 
                     contentOwnerId = {comment.author?._id}
                     contentId = {comment._id}
                     contentType = "comment"
                 />
-            )} */}
+            )}
 
         </div>
 

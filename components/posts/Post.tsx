@@ -11,6 +11,7 @@ import CommentInput from '../comment/CommentInput';
 import CommentList from "@/components/comment/CommentList"
 import PostVoteButtons from './PostVoteButtons';
 import ReportButton from '../ReportButton';
+import DeleteButton from '../DeleteButton';
 
 
 interface PostProps {
@@ -112,6 +113,13 @@ async function Post({
                      {/* report button */}
                     <ReportButton contentId={post._id} />
                     {/* delete button */}
+                    {post.author?._id && (
+                        <DeleteButton 
+                            contentOwnerId={post.author?._id}
+                            contentId={post._id}
+                            contentType="post"
+                        />
+                    )}
                 </div>
        
 
