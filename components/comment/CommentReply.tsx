@@ -4,6 +4,7 @@ import { useUser } from '@clerk/nextjs';
 import React, { useState } from 'react'
 import CommentInput from './CommentInput';
 import { MessageCircle } from 'lucide-react';
+import ReportButton from '../ReportButton';
 
 
 
@@ -32,7 +33,9 @@ function CommentReply({
                 
             </button>
 
-            {/* <ReportButton contentId={comment._id}/>
+            <ReportButton contentId={comment._id}/>
+
+            {/* 
             {comment.author?._id && (
                 <DeleteButton 
                     contentOwnerId = {comment.author?._id}

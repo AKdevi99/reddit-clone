@@ -10,6 +10,7 @@ import { MessageSquare } from 'lucide-react';
 import CommentInput from '../comment/CommentInput';
 import CommentList from "@/components/comment/CommentList"
 import PostVoteButtons from './PostVoteButtons';
+import ReportButton from '../ReportButton';
 
 
 interface PostProps {
@@ -104,8 +105,20 @@ async function Post({
         </div>
 
         {/* buttons */}
-        {/* report button */}
-        {/* delete button */}
+        
+        <div className='absolute top-2 right-2'>
+
+                <div className='flex items-center gap-2'>
+                     {/* report button */}
+                    <ReportButton contentId={post._id} />
+                    {/* delete button */}
+                </div>
+       
+
+           
+
+        </div>
+       
     </article>
   )
 }
