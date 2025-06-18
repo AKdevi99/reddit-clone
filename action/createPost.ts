@@ -3,7 +3,7 @@ import { Post } from "@/sanity.types";
 import { adminClient } from "@/sanity/lib/adminClient";
 import getSubredditBySlug from "@/sanity/lib/subreddit/getSubredditBySlug";
 import { getUser } from "@/sanity/lib/user/getUser";
-import { ChildProcess } from "child_process";
+
 
 
 export type PostImageData = {
@@ -148,6 +148,8 @@ export  async function createPost({
     // mod step
     //implement content moderation api call
     //end mod
+
+    
 
 
     return {post} }catch(error) {

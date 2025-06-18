@@ -69,13 +69,16 @@ export default function CreatePostForm() {
 
             });
 
+            console.log("post created here--->")
+
             resetForm();
             console.log("Finished creating post", result);
 
             if("error" in result && result.error) {
                 setErrorMessage(result.error);
             }else {
-                router.push(`/community/${subreddit}`);
+                const slugifiedSubreddit = subreddit.trim().toLowerCase().replace(/\s+/g, "-");
+                router.push(`/community/${slugifiedSubreddit}`);
             }
 
            

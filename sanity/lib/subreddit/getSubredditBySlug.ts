@@ -4,7 +4,9 @@ import { sanityFetch } from '../live';
 
 export default async function getSubredditBySlug(slug: string) {
 
-    const lowerCaseSlug = slug.toLowerCase();
+    // const lowerCaseSlug = slug.toLowerCase();
+    const slugified = slug.trim().toLowerCase().replace(/\s+/g, "-");
+
 
     const getSubredditBySlugQuery = 
         defineQuery(`*[_type == "subreddit" && slug.current == $slug][0] {
@@ -16,7 +18,7 @@ export default async function getSubredditBySlug(slug: string) {
 
         const subreddit = await sanityFetch({
             query: getSubredditBySlugQuery,
-            params: {slug: lowerCaseSlug}
+            params: {slug: slugified }
         });
 
         return subreddit.data;
