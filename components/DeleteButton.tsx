@@ -39,6 +39,8 @@ export default function DeleteButton({
                     ? await deletePost(contentId)
                     : await deleteComment(contentId);
             
+            console.log(response);
+            
         } catch (error) {
             setError("Failed to delete. Please try again");
             console.error(`Failed to delete ${contentType}:`, error);

@@ -7,8 +7,6 @@ import { Textarea} from "../ui/textarea";
 import Image from "next/image";
 import { ImageIcon } from "lucide-react";
 import { Button } from "../ui/button";
-import { resolve } from "path";
-import CreatePost from "./CreatePost";
 import { createPost } from "@/action/createPost";
 export default function CreatePostForm() {
     const [isLoading,setIsLoading] = useState(false);

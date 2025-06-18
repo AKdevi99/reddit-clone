@@ -1,5 +1,5 @@
 import * as React from "react"
-import { FlameIcon, GalleryVerticalEnd, HomeIcon, Minus, Plus, TrendingUpIcon } from "lucide-react"
+import { FlameIcon, HomeIcon, Minus, Plus, TrendingUpIcon } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import ReddistLogo from "@/images/Reddist_Full (1).png"
