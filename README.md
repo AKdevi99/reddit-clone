@@ -28,13 +28,18 @@ A fully-functional, modern Reddit-inspired app with custom subreddits, threaded 
 ## 🚀 Tech Stack
 
 <div align="center">
-  <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white"/></a>
-  <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white"/></a>
-  <a href="https://clerk.dev/" target="_blank"><img src="https://img.shields.io/badge/Clerk-3A1C78?style=for-the-badge&logo=clerk&logoColor=white"/></a>
-  <a href="https://www.sanity.io/" target="_blank"><img src="https://img.shields.io/badge/Sanity-FF4747?style=for-the-badge&logo=sanity&logoColor=white"/></a>
-  <a href="https://groq.dev/" target="_blank"><img src="https://img.shields.io/badge/GROQ-000000?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAH0lEQVQokWNgQAX/GdiAMAyMDIwgGZiZ/4QMAK9cQwXUwWeeAAAAAElFTkSuQmCC&logoColor=white"/></a>
-  <a href="https://vercel.com/" target="_blank"><img src="https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white"/></a>
+
+  <a href="https://nextjs.org/" target="_blank"><img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js"/></a>
+  <a href="https://tailwindcss.com/" target="_blank"><img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="TailwindCSS"/></a>
+  <a href="https://ui.shadcn.dev/" target="_blank"><img src="https://img.shields.io/badge/ShadCN/UI-111111?style=for-the-badge&logo=radixui&logoColor=white" alt="ShadCN UI"/></a>
+  <a href="https://clerk.dev/" target="_blank"><img src="https://img.shields.io/badge/Clerk-3A1C78?style=for-the-badge&logo=clerk&logoColor=white" alt="Clerk"/></a>
+  <a href="https://www.sanity.io/" target="_blank"><img src="https://img.shields.io/badge/Sanity-FF4747?style=for-the-badge&logo=sanity&logoColor=white" alt="Sanity"/></a>
+  <a href="https://groq.dev/" target="_blank"><img src="https://img.shields.io/badge/GROQ-000000?style=for-the-badge&logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAYAAADwikbvAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAH0lEQVQokWNgQAX/GdiAMAyMDIwgGZiZ/4QMAK9cQwXUwWeeAAAAAElFTkSuQmCC&logoColor=white" alt="GROQ"/></a>
+  <a href="https://vercel.com/" target="_blank"><img src="https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel"/></a>
+  <a href="https://www.cloudflare.com/" target="_blank"><img src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare"/></a>
+
 </div>
+
 
 ---
 
@@ -137,7 +142,10 @@ Made with ❤️ by [**Aditya Singh**](https://github.com/AKdevi99)
 🎓 Chairman, IEEE Student Branch — RVITM
 🏆 Topper | Hackathon Mentor | Full-stack Explorer
 
-<div align="center"> <a href="https://github.com/AKdevi99" target="_blank"> <img src="https://img.shields.io/github/followers/AKdevi99?label=Follow%20me%20on%20GitHub&logo=github&style=for-the-badge" alt="Follow on GitHub" /> </a> <a href="https://www.linkedin.com/in/aditya-singh-938152292/" target="_blank"> <img src="https://img.shields.io/badge/Connect%20on-LinkedIn-blue?logo=linkedin&style=for-the-badge" alt="Connect on LinkedIn" /> </a> </div>
+<div align="center">
+  <a href="https://github.com/AKdevi99" target="_blank"> <img src="https://img.shields.io/github/followers/AKdevi99?label=Follow%20me%20on%20GitHub&logo=github&style=for-the-badge" alt="Follow on GitHub" /></a> 
+  <a href="https://www.linkedin.com/in/aditya-singh-938152292/" target="_blank"> <img src="https://img.shields.io/badge/Connect%20on-LinkedIn-blue?logo=linkedin&style=for-the-badge" alt="Connect on LinkedIn" /></a> 
+</div>
 
 ---
 
